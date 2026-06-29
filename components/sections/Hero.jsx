@@ -1,5 +1,6 @@
-"use client";
 
+
+"use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import TiltCard from "@/components/common/TiltCard";
@@ -28,7 +29,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative isolate overflow-hidden bg-[var(--background)] pt-24 lg:pt-28"
+      className="relative isolate overflow-hidden bg-[var(--background)] pt-24 lg:pt-40"
     >
       <div className="absolute inset-0 -z-20">
         <Image
@@ -56,7 +57,6 @@ export default function Hero() {
         transition={{ duration: 1.2, ease: "easeOut" }}
         className="absolute left-1/2 top-[18%] -z-10 h-[520px] w-[520px] -translate-x-1/2 rounded-full border border-white/10"
       />
-
       <div className="container-xl grid items-center gap-10 pb-10 pt-8 lg:grid-cols-[616px_minmax(0,1fr)] lg:pb-8 lg:pt-12">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
@@ -69,24 +69,29 @@ export default function Hero() {
             <span className="block lg:whitespace-nowrap">
               Digital Solutions for
             </span>
-            <span className="block text-[var(--primary)] lg:whitespace-nowrap">
+            <span className="block dark:text-[var(--primary)] text-black lg:whitespace-nowrap">
               Modern Businesses
             </span>
           </h1>
 
-          <p className="mt-12 max-w-[616px] text-sm leading-[135%] text-[var(--text-muted)] sm:text-[18px]">
+          <p className="mt-12 max-w-[616px] text-sm leading-[135%] dark:text-[var(--text-muted)] text-black  sm:text-[18px]">
             PakDevStudio helps startups, agencies, and growing businesses
             transform ideas into powerful digital products through strategy,
             design, development, and technology-driven execution.
           </p>
 
           <div className="mt-12">
-            <a href="#contact" className="btn-demo group">
-              Book Demo
-              <span className="grid h-10 w-10 place-items-center rounded-[36px] bg-[var(--primary)] text-[#101114] transition duration-300 group-hover:translate-x-1">
+            <a
+              href="#contact"
+              className="flex h-12 w-[171px] items-center justify-between rounded-[51px] bg-white py-1.5 pl-5 pr-1.5 text-base font-normal text-black transition duration-300 hover:scale-[1.03] hover:shadow-[0_18px_38px_rgba(118,207,49,0.25)]"
+            >
+              <span>Book Demo</span>
+              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-[36px] bg-[var(--primary)] text-[#101114] transition duration-300 group-hover:translate-x-1">
                 <ArrowIcon />
               </span>
             </a>
+
+    
           </div>
         </motion.div>
 
@@ -97,31 +102,14 @@ export default function Hero() {
           className="relative mx-auto h-[310px] w-full max-w-[560px] sm:h-[360px] lg:h-[380px]"
         >
           <div className="absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[var(--primary)]/20 blur-3xl" />
-
-          {heroImages.map((item, index) => (
-            <motion.article
-              key={item.title}
-              initial={{ opacity: 0, y: 20, rotate: 0 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, delay: 0.16 + index * 0.08 }}
-              className={`absolute ${item.className}`}
-            >
-              <TiltCard className="rounded-[18px]">
-                <div className="rounded-[18px] border border-white/12 bg-[#161719]/80 p-2 shadow-[0_24px_60px_rgba(0,0,0,0.45)] backdrop-blur-xl">
-                  <div className="relative aspect-[1.55/1] overflow-hidden rounded-[14px] bg-[var(--surface-soft)]">
-                    <Image
-                      src={item.src}
-                      alt={item.title}
-                      fill
-                      priority={index < 2}
-                      sizes="(max-width: 768px) 52vw, 310px"
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-              </TiltCard>
-            </motion.article>
-          ))}
+          <Image
+            src={"/images/hero-group-img.png"}
+            alt={"item.title"}
+            fill
+            sizes="(max-width: 768px) 52vw, 310px"
+            // className="object-cover"
+            className="object-contain"
+          />
         </motion.div>
       </div>
 

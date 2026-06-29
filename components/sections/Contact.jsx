@@ -52,7 +52,7 @@ export default function Contact() {
                   key={placeholder}
                   placeholder={placeholder}
                   aria-label={placeholder}
-                  className="h-14 w-full rounded-[12px] border-0 bg-[#1f1f23] px-[13px] text-[9px] lg:text-lg! text-white outline-none placeholder:text-[#7A7C81] focus:ring-1 focus:ring-[var(--primary)]"
+                  className="h-14 w-full rounded-[12px] border-0 dark:bg-[#1f1f23] bg-[#F6F6F6] px-[13px] text-[9px] lg:text-lg! text-white outline-none placeholder:text-[#7A7C81] focus:ring-1 focus:ring-[var(--primary)]"
                 />
               ),
             )}
@@ -62,12 +62,10 @@ export default function Contact() {
               href="#contact"
               className="flex h-12 w-[171px] lg:mt-10 items-center justify-between rounded-[51px] bg-white py-1.5 pl-5 pr-1.5 text-base font-normal text-black transition duration-300 hover:scale-[1.03] hover:shadow-[0_18px_38px_rgba(118,207,49,0.25)]"
             >
-             
-                <span>Book Demo</span>
-                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-[36px] bg-[var(--primary)] text-[#101114] transition duration-300 group-hover:translate-x-1">
-                  <ArrowIcon />
-                </span>
-            
+              <span>Book Demo</span>
+              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-[36px] bg-[var(--primary)] text-[#101114] transition duration-300 group-hover:translate-x-1">
+                <ArrowIcon />
+              </span>
             </button>
           </form>
         </motion.div>

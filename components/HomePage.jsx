@@ -21,7 +21,6 @@ export default function HomePage() {
       <Services />
       <WhyChoosePakDev />
       <WhyChoose />
-   
       <Testimonials />
       <TeamSection />
       <Faq />
