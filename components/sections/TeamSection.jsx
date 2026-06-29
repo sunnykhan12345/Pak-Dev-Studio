@@ -7,29 +7,30 @@ import TiltCard from "../common/TiltCard";
 const team = [
   { name: "Hamza Malik", role: "CEO", image: "/images/hamza.jpg" },
   {
+    name: "Kainaat Shahrukh",
+    role: "HR & Administrator",
+    image: "/images/hr.png",
+  },
+  {
     name: "Kalim Ahmed",
     role: "Senior Product Designer",
     image: "/images/basser.png",
+  },
+  {
+    name: "Sana Ullah",
+    role: "Front End Developer",
+    image: "/images/sana.png",
   },
   {
     name: "Baseer Ahmed",
     role: "Senior Backend Developer",
     image: "/images/basser.png",
   },
-  {
-    name: "Sana Ullah",
-    role: "Front End Developer",
-    image: "/images/basser.png",
-  },
-  {
-    name: "M Kashif",
-    role: "HR & Administrator",
-    image: "/images/basser.png",
-  },
+
   {
     name: "Awais Khan",
     role: "Full Stack Developer",
-    image: "/images/basser.png",
+    image: "/images/awais.png",
   },
 ];
 
