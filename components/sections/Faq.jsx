@@ -25,15 +25,15 @@ export default function Faq() {
               <button
                 type="button"
                 onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
-                className="flex w-full items-center  justify-between gap-4 py-5 px-6 text-left font-black"
+                className="flex w-full items-center justify-between lg:gap-4 py-5 lg:px-6 px-3 text-left font-black"
               >
-                <div className="space-x-8">
+                <div className="lg:space-x-6 space-x-3">
                   <span className="lg:text-2xl text-base text-[#7A7C81]">
                    0{ index + 1}
                   </span>
-                  <span className="lg:text-2xl text-base">{item.question}</span>
+                  <span className="lg:text-2xl sm:text-base text-sm">{item.question}</span>
                 </div>
-                <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-[var(--surface)] text-xl transition duration-300">
+                <span className="grid sm:h-8 sm:w-8 h-6 w-6 shrink-0 place-items-center rounded-full bg-[var(--surface)] sm:text-xl text-base transition duration-300">
                   {openIndex === index ? "−" : "+"}
                 </span>
               </button>

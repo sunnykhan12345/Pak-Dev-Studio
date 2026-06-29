@@ -310,7 +310,7 @@ export default function Services() {
           transition={{ duration: 0.55 }}
           className="mb-[42px] text-center"
         >
-          <h2 className="font-nexa text-[28px] font-[800] leading-[115%] text-[var(--text)] sm:text-[30px] md:text-[32px]">
+          <h2 className="font-nexa text-[28px] font-bold leading-[115%] text-[var(--text)] sm:text-[30px] md:text-[32px]">
             Our IT Services That Help Your
             <span className="block text-[var(--primary)]">
               Business Grow Online
