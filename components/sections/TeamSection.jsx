@@ -8,7 +8,7 @@ const team = [
   { name: "Hamza Malik", role: "CEO", image: "/images/hamza.jpg" },
   {
     name: "Kainaat Shahrukh",
-    role: "HR & Administrator",
+    role: "HR & Admin Manager",
     image: "/images/hr.png",
   },
   {

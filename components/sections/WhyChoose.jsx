@@ -44,10 +44,8 @@ export default function WhyChoose() {
             Idea To Launch
           </h3>
         </motion.div>
-    
           <div className="relative mx-auto lg:mt-16 mt-10 w-full max-w-[1200px]">
             <div className="absolute left-0 right-0 top-[7px] hidden h-px bg-[var(--border)] lg:block" />
-
             <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-10 lg:gap-0 pl-4 sm:pl-0">
               {steps.map((step, index) => (
                   <TiltCard>
@@ -70,11 +68,9 @@ export default function WhyChoose() {
                     <h4 className="text-[56px] font-bold leading-none tracking-[-0.06em] text-[var(--text)] transition-colors duration-300 group-hover:text-[var(--primary)] md:text-[64px] lg:text-[80px]">
                       {String(index + 1).padStart(2, "0")}
                     </h4>
-
                     <h5 className="mt-8 text-sm lg:text-lg font-bold text-[var(--text)]">
                       {step.title}
                     </h5>
-
                     <p className="mt-4  lg:text-sm text-xs leading-[135%] text-[var(--text-muted)]">
                       {step.text}
                     </p>
