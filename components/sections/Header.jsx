@@ -124,7 +124,7 @@ export default function Header() {
         transition={{ duration: 0.55, ease: "easeOut" }}
         className="container-xl pointer-events-auto"
       >
-        <div className="mx-auto flex h-[72px] items-center justify-between gap-3 rounded-[60px] bg-white/5 sm:px-4 px-2 shadow-[0_18px_70px_rgba(0,0,0,0.35)] backdrop-blur-2xl dark:bg-[#222325]/70 light-header">
+        <div className="mx-auto flex lg:h-[72px] h-16 items-center justify-between gap-3 rounded-[60px] bg-white/5 sm:px-4 px-2 shadow-[0_18px_70px_rgba(0,0,0,0.35)] backdrop-blur-2xl dark:bg-[#222325]/70 light-header">
           <Link
             href="#home"
             aria-label="PakDevStudio home"
