@@ -1,9 +1,7 @@
 "use client";
-
 import Image from "next/image";
 import { motion } from "framer-motion";
 import TiltCard from "../common/TiltCard";
-
 const team = [
   { name: "Hamza Malik", role: "CEO", image: "/images/hamza.jpg" },
   {
@@ -26,14 +24,12 @@ const team = [
     role: "Senior Backend Developer",
     image: "/images/basser.png",
   },
-
   {
     name: "Awais Khan",
     role: "Full Stack Developer",
     image: "/images/awais.png",
   },
 ];
-
 export default function TeamSection() {
   return (
     <section className="overflow-hidden">
@@ -52,7 +48,6 @@ export default function TeamSection() {
             Every Success
           </h3>
         </motion.div>
-
         <motion.div
           initial={{ opacity: 0, y: 26 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +68,6 @@ export default function TeamSection() {
                   sizes="276px"
                   className="object-cover transition duration-700 group-hover:scale-110"
                 />
-
                 <div className="absolute inset-x-0 bottom-2 left-2 right-2 rounded-[12px] h-[79px] bg-black/30 px-[14px] py-[14px] backdrop-blur-[16px]">
                   <h4 className="text-[15px] lg:text-lg font-bold leading-none text-white">
                     {member.name}

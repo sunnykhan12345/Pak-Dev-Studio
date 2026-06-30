@@ -28,7 +28,7 @@ const steps = [
 
 export default function WhyChoose() {
   return (
-    <section className="overflow-hidden">
+    <section id="packages" className="overflow-hidden">
       <div className="container-xl">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -44,11 +44,11 @@ export default function WhyChoose() {
             Idea To Launch
           </h3>
         </motion.div>
-          <div className="relative mx-auto lg:mt-16 mt-10 w-full max-w-[1200px]">
-            <div className="absolute left-0 right-0 top-[7px] hidden h-px bg-[var(--border)] lg:block" />
-            <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-10 lg:gap-0 pl-4 sm:pl-0">
-              {steps.map((step, index) => (
-                  <TiltCard>
+        <div className="relative mx-auto lg:mt-16 mt-10 w-full max-w-[1200px]">
+          <div className="absolute left-0 right-0 top-[7px] hidden h-px bg-[var(--border)] lg:block" />
+          <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-10 lg:gap-0 pl-4 sm:pl-0">
+            {steps.map((step, index) => (
+              <TiltCard>
                 <motion.div
                   key={step.title}
                   initial={{ opacity: 0, y: 28 }}
@@ -76,11 +76,10 @@ export default function WhyChoose() {
                     </p>
                   </div>
                 </motion.div>
-                </TiltCard>
-              ))}
-            </div>
+              </TiltCard>
+            ))}
           </div>
-        
+        </div>
       </div>
     </section>
   );

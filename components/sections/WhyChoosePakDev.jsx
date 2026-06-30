@@ -32,7 +32,10 @@ export default function WhyChoosePakDev() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-white lg:py-[140px] py-20 text-black dark:bg-[#15161a] dark:text-white">
+    <section
+      id="features"
+      className="relative overflow-hidden bg-white lg:py-[140px] py-20 text-black dark:bg-[#15161a] dark:text-white"
+    >
       <div className="mx-auto max-w-7xl sm:px-6 px-4">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
