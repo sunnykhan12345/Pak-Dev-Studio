@@ -117,7 +117,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed inset-x-0 top-7 z-50 sm:px-4 pointer-events-none">
+    <header className="fixed inset-x-0 lg:top-7 top-4 z-50 sm:px-4 pointer-events-none">
       <motion.div
         initial={{ opacity: 0, y: -22, scale: 0.98 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
