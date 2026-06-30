@@ -50,13 +50,13 @@ export default function Hero() {
         />
       </div>
 
-      <motion.div
+      {/* <motion.div
         aria-hidden="true"
         initial={{ opacity: 0, scale: 0.85 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
         className="absolute left-1/2 top-[18%] -z-10 h-[520px] w-[520px] -translate-x-1/2 rounded-full border border-white/10"
-      />
+      /> */}
       <div className="container-xl grid items-center gap-10 pb-10 pt-8 lg:grid-cols-[616px_minmax(0,1fr)] lg:pb-8 lg:pt-12">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
