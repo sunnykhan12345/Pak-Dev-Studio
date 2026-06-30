@@ -1,8 +1,6 @@
 "use client";
-
 import { motion } from "framer-motion";
 import TiltCard from "../common/TiltCard";
-
 const steps = [
   {
     title: "Discovery & Planning",
@@ -25,7 +23,6 @@ const steps = [
     text: "We deploy your product and provide support for improvements and future updates.",
   },
 ];
-
 export default function WhyChoose() {
   return (
     <section id="packages" className="overflow-hidden">
