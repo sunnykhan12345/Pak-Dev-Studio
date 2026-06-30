@@ -33,7 +33,7 @@ export default function WhyChoosePakDev() {
 
   return (
     <section className="relative overflow-hidden bg-white lg:py-[140px] py-20 text-black dark:bg-[#15161a] dark:text-white">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl sm:px-6 px-4">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ export default function WhyChoosePakDev() {
 
         <div className="relative mx-auto min-h-[410px] max-w-6xl">
           <svg
-            className="absolute left-0 top-0 h-[255px] w-full overflow-visible"
+            className="absolute left-0 top-0 h-[255px] w-full overflow-visible sm:block hidden"
             viewBox="0 0 1000 240"
             fill="none"
             preserveAspectRatio="none"
@@ -99,7 +99,7 @@ export default function WhyChoosePakDev() {
               strokeLinecap="round"
             />
           </svg>
-          <div className="relative z-10 grid gap-6 pt-36 md:grid-cols-4 md:gap-10">
+          <div className="relative z-10 grid gap-4 sm:pt-36 md:grid-cols-4 grid-cols-2 md:gap-10">
             {items.map((item, index) => (
               <TiltCard>
                 <motion.div
@@ -113,7 +113,7 @@ export default function WhyChoosePakDev() {
                     ease: "easeOut",
                   }}
                   whileHover={{ y: -8, scale: 1.02 }}
-                  className={`rounded-[20px] bg-[#F6F6F6] px-5 py-8 text-center shadow-sm transition-all duration-300 dark:bg-[#1F1F23] ${
+                  className={`rounded-[20px] bg-[#F6F6F6] sm:px-5 px-2 py-8 text-center shadow-sm transition-all duration-300 dark:bg-[#1F1F23] ${
                     index === 0
                       ? "md:mt-28"
                       : index === 1

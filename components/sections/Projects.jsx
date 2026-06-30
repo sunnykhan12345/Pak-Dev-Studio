@@ -46,7 +46,7 @@ export default function Projects() {
                     />
                   </div>
                 </article>
-                <div className="px-1 pt-5">
+                <div className="px-1 pt-5 text-center sm:text-start">
                   <h3 className="text-sm font-normal tracking-[-0.02em] lg:text-xl">
                     {project.title}
                   </h3>

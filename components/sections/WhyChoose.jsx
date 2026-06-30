@@ -37,10 +37,10 @@ export default function WhyChoose() {
           transition={{ duration: 0.55 }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-extrabold leading-tight md:text-4xl lg:text-5xl">
             A Clear Process From
           </h2>
-          <h3 className="mt-2 text-3xl font-bold leading-tight text-[var(--primary)] md:text-4xl lg:text-5xl">
+          <h3 className="mt-2 text-3xl font-extrabold leading-tight text-[var(--primary)] md:text-4xl lg:text-5xl">
             Idea To Launch
           </h3>
         </motion.div>
@@ -48,7 +48,7 @@ export default function WhyChoose() {
           <div className="relative mx-auto lg:mt-16 mt-10 w-full max-w-[1200px]">
             <div className="absolute left-0 right-0 top-[7px] hidden h-px bg-[var(--border)] lg:block" />
 
-            <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-10 lg:gap-0">
+            <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-10 lg:gap-0 pl-4 sm:pl-0">
               {steps.map((step, index) => (
                   <TiltCard>
                 <motion.div
@@ -57,7 +57,7 @@ export default function WhyChoose() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.35 }}
                   transition={{ duration: 0.5, delay: index * 0.08 }}
-                  className="group relative flex flex-col items-center "
+                  className="group relative flex flex-col items-center"
                 >
                   <div className="relative mb-12 flex h-[14px] w-full items-center">
                     {" "}

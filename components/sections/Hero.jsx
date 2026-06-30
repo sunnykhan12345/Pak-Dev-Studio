@@ -62,7 +62,7 @@ export default function Hero() {
           transition={{ duration: 0.65, ease: "easeOut" }}
           className="w-full max-w-[616px]"
         >
-          <h1 className="font-nexa text-[32px] font-extrabold lg:leading-[70px] tracking-[0px] text-white  sm:text-[48px] md:text-[54px] lg:text-[59px]">
+          <h1 className="font-nexa text-[32px] sm:text-start text-center font-extrabold lg:leading-[70px] tracking-[0px] text-white  sm:text-[48px] md:text-[54px] lg:text-[59px]">
             <span className="block lg:whitespace-nowrap">Building Smart</span>
             <span className="block lg:whitespace-nowrap">
               Digital Solutions for
@@ -71,24 +71,22 @@ export default function Hero() {
               Modern Businesses
             </span>
           </h1>
-          <p className="lg:mt-12 mt-6 max-w-[616px] text-sm leading-[135%] dark:text-[var(--text-muted)] text-black  sm:text-[18px]">
+          <p className="sm:text-start text-center lg:mt-12 mt-6 max-w-[616px] text-sm leading-[135%] dark:text-[var(--text-muted)] text-black sm:text-[18px]">
             PakDevStudio helps startups, agencies, and growing businesses
             transform ideas into powerful digital products through strategy,
             design, development, and technology-driven execution.
           </p>
 
-          <div className="lg:mt-12 mt-6">
+          <div className="lg:mt-12 mt-6 ">
             <a
               href="#contact"
-              className="flex h-12 w-[171px] items-center justify-between rounded-[51px] bg-white py-1.5 pl-5 pr-1.5 text-base font-normal text-black transition duration-300 hover:scale-[1.03] hover:shadow-[0_18px_38px_rgba(118,207,49,0.25)]"
+              className="flex h-12 w-[171px] m-auto sm:mx-0 items-center justify-between rounded-[51px] bg-white py-1.5 pl-5 pr-1.5 text-base font-normal text-black transition duration-300 hover:scale-[1.03] hover:shadow-[0_18px_38px_rgba(118,207,49,0.25)]"
             >
               <span>Book Demo</span>
               <span className="grid h-10 w-10 shrink-0 place-items-center rounded-[36px] bg-[var(--primary)] text-[#101114] transition duration-300 group-hover:translate-x-1">
                 <ArrowIcon />
               </span>
             </a>
-
-    
           </div>
         </motion.div>
 

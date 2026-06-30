@@ -300,7 +300,10 @@ const textBase = "text-xs leading-[145%] text-[#5f665c] dark:text-white/60";
 
 export default function Services() {
   return (
-    <section id="services" className="relative overflow-hidden lg:py-[140px] py-20">
+    <section
+      id="services"
+      className="relative overflow-hidden lg:py-[140px] py-20"
+    >
       <div className="mx-auto w-full max-w-[1200px] px-4">
         <motion.div
           variants={fadeUp}
@@ -330,7 +333,7 @@ export default function Services() {
             transition={{ duration: 0.5 }}
             className={`${cardBase} min-h-[520px] rounded-[10px] p-[14px] md:min-h-[560px] lg:col-span-4 lg:row-span-2 lg:min-h-0`}
           >
-            <div className="relative z-10">
+            <div className="relative z-10 text-center sm:text-start">
               <h3 className={titleBase}>Mobile App Development</h3>
               <p className={`mt-[12px] ${textBase}`}>
                 User-friendly mobile applications for Android and iOS with clean
@@ -355,7 +358,7 @@ export default function Services() {
             transition={{ duration: 0.5, delay: 0.05 }}
             className={`${cardBase} min-h-[360px] rounded-[20px] p-[14px] md:min-h-[360px] lg:col-span-8 lg:mb-20 lg:min-h-[240px]`}
           >
-            <div className="relative z-10 max-w-[230px]">
+            <div className="relative z-10 max-w-[230px]  text-center sm:text-start">
               <h3 className={titleBase}>
                 Custom Software
                 <span className="block">Development</span>
@@ -387,7 +390,7 @@ export default function Services() {
           <motion.article
             variants={fadeUp}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className={`${cardBase} min-h-[220px] rounded-[10px] p-[14px] lg:col-span-4 lg:min-h-[240px]`}
+            className={`${cardBase} min-h-[220px] rounded-[10px] p-[14px] lg:col-span-4 lg:min-h-[240px]  text-center sm:text-start`}
           >
             <h3 className={titleBase}>AI & Automation Solutions</h3>
             <p className={`mt-[14px] max-w-[260px] ${textBase}`}>
@@ -433,7 +436,7 @@ export default function Services() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className={`${cardBase} min-h-[330px] rounded-[20px] p-[14px] lg:col-span-6 lg:min-h-[193px]`}
           >
-            <div className="relative z-10 max-w-[185px]">
+            <div className="relative z-10 max-w-[185px] mx-auto sm:mx-0">
               <h3 className={titleBase}>
                 UI UX Designing
                 <span className="block">for Apps & Web</span>
@@ -466,7 +469,7 @@ export default function Services() {
             transition={{ duration: 0.5, delay: 0.25 }}
             className={`${cardBase} min-h-[330px] rounded-[10px] p-[14px] lg:col-span-6 lg:min-h-[193px]`}
           >
-            <div className="relative z-10 max-w-[185px]">
+            <div className="relative z-10 max-w-[185px] mx-auto sm:mx-0">
               <h3 className={titleBase}>
                 Website Design
                 <span className="block">& Development</span>
