@@ -20,7 +20,7 @@ export default function Testimonials() {
           }
         />
 
-        <div className="mx-auto mt-12 grid max-w-[1200px] gap-5 lg:grid-cols-3">
+        <div className="mx-auto lg:mt-16 mt-10 grid max-w-[1200px] gap-5 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
             <motion.article
               key={testimonial.name}

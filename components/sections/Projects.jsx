@@ -8,7 +8,7 @@ import { fadeUp } from "@/components/common/animations";
 
 export default function Projects() {
   return (
-    <section id="projects" className="section-compact bg-[var(--background)]">
+    <section id="projects" className="lg:py-[140px] py-20 bg-[var(--background)]">
       <div className="container-xl">
         <motion.div
           variants={fadeUp}
@@ -18,13 +18,13 @@ export default function Projects() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="font-nexa text-3xl font-[800] leading-[115%] tracking-[0px] sm:text-4xl lg:text-[44px]">
-            Our Most Recent{" "}
+          <h2 className="font-nexa text-3xl font-extrabold leading-[115%] tracking-[0px] sm:text-4xl lg:text-[48px]">
+            Our Most Recent{" "}<br />
             <span className="text-[var(--primary)]">Projects</span>
           </h2>
         </motion.div>
 
-        <div className="mx-auto mt-10 grid max-w-[1200px] gap-5 sm:grid-cols-2 lg:mt-16 lg:gap-6">
+        <div className="mx-auto mt-10  grid max-w-[1200px] gap-5 sm:grid-cols-2 lg:mt-16 lg:gap-6">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}

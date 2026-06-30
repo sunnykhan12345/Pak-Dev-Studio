@@ -9,10 +9,23 @@ export default function Faq() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="section-space">
+    <section className="lg:py-[140px] py-20">
       <div className="container-xl max-w-[1200px]">
-        <SectionHeading eyebrow="FAQ" title="Frequently Asked Questions" />
-        <div className="mt-16 space-y-3 lg:space-y-6">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.55 }}
+          className="mb-10 lg:mb-16 text-center"
+        >
+          <h2 className="text-[26px] lg:text-5xl font-normal leading-[1.15] tracking-[-0.04em] text-[var(--text)] sm:text-[32px]">
+            Frequently Asked
+          </h2>
+          <h3 className="mt-[4px] text-[26px] lg:text-5xl  font-normal leading-[1.15] tracking-[-0.04em] text-[var(--primary)] sm:text-[32px]">
+            Questions
+          </h3>
+        </motion.div>
+        <div className="lg:mt-16 mt-10 space-y-3 lg:space-y-6">
           {faqs.map((item, index) => (
             <motion.div
               key={item.question}
@@ -29,9 +42,11 @@ export default function Faq() {
               >
                 <div className="lg:space-x-6 space-x-3">
                   <span className="lg:text-2xl text-base text-[#7A7C81]">
-                   0{ index + 1}
+                    0{index + 1}
                   </span>
-                  <span className="lg:text-2xl sm:text-base text-sm">{item.question}</span>
+                  <span className="lg:text-2xl sm:text-base text-sm">
+                    {item.question}
+                  </span>
                 </div>
                 <span className="grid sm:h-8 sm:w-8 h-6 w-6 shrink-0 place-items-center rounded-full bg-[var(--surface)] sm:text-xl text-base transition duration-300">
                   {openIndex === index ? "−" : "+"}

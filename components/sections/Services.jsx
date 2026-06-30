@@ -300,7 +300,7 @@ const textBase = "text-xs leading-[145%] text-[#5f665c] dark:text-white/60";
 
 export default function Services() {
   return (
-    <section id="services" className="relative overflow-hidden py-[70px]">
+    <section id="services" className="relative overflow-hidden lg:py-[140px] py-20">
       <div className="mx-auto w-full max-w-[1200px] px-4">
         <motion.div
           variants={fadeUp}
@@ -310,7 +310,7 @@ export default function Services() {
           transition={{ duration: 0.55 }}
           className="mb-[42px] text-center"
         >
-          <h2 className="font-nexa text-[28px] font-bold leading-[115%] text-[var(--text)] sm:text-[30px] md:text-[32px]">
+          <h2 className="font-nexa font-extrabold leading-[115%] text-[var(--text)] text-[30px] md:text-4xl lg:text-[48px]">
             Our IT Services That Help Your
             <span className="block text-[var(--primary)]">
               Business Grow Online

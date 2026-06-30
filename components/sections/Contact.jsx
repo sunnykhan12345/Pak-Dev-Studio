@@ -34,11 +34,11 @@ export default function Contact() {
           transition={{ duration: 0.55, delay: 0.08 }}
           className="pt-[21px]"
         >
-          <h2 className="text-[24px] lg:text-5xl font-bold leading-[1.15] tracking-[-0.04em] text-[var(--text)]">
+          <h2 className="text-[24px] lg:text-5xl font-extrabold leading-[1.15] tracking-[-0.04em] text-[var(--text)]">
             Let’s Connect!
           </h2>
 
-          <h3 className="mt-[3px] text-[24px] lg:text-5xl font-bold leading-[1.15] tracking-[-0.04em] text-[var(--primary)]">
+          <h3 className="mt-[3px] text-[24px] lg:text-5xl font-extrabold leading-[1.15] tracking-[-0.04em] text-[var(--primary)]">
             Reach Out Anytime!
           </h3>
 

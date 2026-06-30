@@ -117,14 +117,14 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed inset-x-0 top-7 z-50 px-4 pointer-events-none">
+    <header className="fixed inset-x-0 top-7 z-50 sm:px-4 pointer-events-none">
       <motion.div
         initial={{ opacity: 0, y: -22, scale: 0.98 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.55, ease: "easeOut" }}
         className="container-xl pointer-events-auto"
       >
-        <div className="mx-auto flex h-[72px] items-center justify-between gap-3 rounded-[60px] bg-white/5 px-4 shadow-[0_18px_70px_rgba(0,0,0,0.35)] backdrop-blur-2xl dark:bg-[#222325]/70 light-header">
+        <div className="mx-auto flex h-[72px] items-center justify-between gap-3 rounded-[60px] bg-white/5 sm:px-4 px-2 shadow-[0_18px_70px_rgba(0,0,0,0.35)] backdrop-blur-2xl dark:bg-[#222325]/70 light-header">
           <Link
             href="#home"
             aria-label="PakDevStudio home"
@@ -164,10 +164,10 @@ export default function Header() {
             <button
               type="button"
               onClick={() => handleScroll("#contact")}
-              className="group flex h-12 w-[171px] items-center justify-between rounded-[51px] bg-white py-1.5 pl-5 pr-1.5 text-base font-normal text-black transition duration-300 hover:scale-[1.03] hover:shadow-[0_18px_38px_rgba(118,207,49,0.25)]"
+              className="group flex sm:h-12 h-10 sm:w-[171px] w-[140px] items-center justify-between rounded-[51px] bg-white py-1.5 pl-5 pr-1.5 sm:text-base text-sm font-normal text-black transition duration-300 hover:scale-[1.03] hover:shadow-[0_18px_38px_rgba(118,207,49,0.25)]"
             >
               <span>Book Demo</span>
-              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-[36px] bg-[var(--primary)] text-[#101114] transition duration-300 group-hover:translate-x-1">
+              <span className="grid sm:h-10 h-7 sm:w-10 w-7 shrink-0 place-items-center rounded-[36px] bg-[var(--primary)] text-[#101114] transition duration-300 group-hover:translate-x-1">
                 <ArrowIcon />
               </span>
             </button>

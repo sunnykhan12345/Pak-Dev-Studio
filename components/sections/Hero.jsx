@@ -64,7 +64,7 @@ export default function Hero() {
           transition={{ duration: 0.65, ease: "easeOut" }}
           className="w-full max-w-[616px]"
         >
-          <h1 className="font-nexa text-[35px] font-[800] leading-[100%] tracking-[0px] text-white  sm:text-[48px] md:text-[54px] lg:text-[59px]">
+          <h1 className="font-nexa text-[35px] font-extrabold leading-[70px] tracking-[0px] text-white  sm:text-[48px] md:text-[54px] lg:text-[59px]">
             <span className="block lg:whitespace-nowrap">Building Smart</span>
             <span className="block lg:whitespace-nowrap">
               Digital Solutions for

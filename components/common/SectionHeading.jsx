@@ -19,7 +19,7 @@ export default function SectionHeading({ eyebrow, title, text, className = "" })
         </p>
       ) : null}
 
-      <h2 className="font-nexa text-[30px] font-[800] leading-[115%] tracking-[0px] text-[var(--text)] sm:text-[36px] lg:text-[42px]">
+      <h2 className="font-nexa text-3xl font-extrabold  tracking-[0px] text-[var(--text)] sm:text-4xl lg:text-[46px]">
         {title}
       </h2>
 

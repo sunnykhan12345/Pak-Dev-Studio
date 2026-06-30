@@ -36,19 +36,19 @@ const team = [
 
 export default function TeamSection() {
   return (
-    <section className="overflow-hidden py-[64px]">
+    <section className="overflow-hidden">
       <div className="mx-auto w-full max-w-[1200px]">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.55 }}
-          className="mb-[34px] lg:mb-16 text-center"
+          className="mb-10 lg:mb-16 text-center"
         >
-          <h2 className="text-[26px] lg:text-5xl font-bold leading-[1.15] tracking-[-0.04em] text-[var(--text)] sm:text-[32px]">
+          <h2 className="text-[26px] lg:text-5xl font-extrabold leading-[1.15] tracking-[-0.04em] text-[var(--text)] sm:text-[32px]">
             The Minds Behind
           </h2>
-          <h3 className="mt-[4px] text-[26px] lg:text-5xl  font-normal leading-[1.15] tracking-[-0.04em] text-[var(--primary)] sm:text-[32px]">
+          <h3 className="mt-[4px] text-[26px] lg:text-5xl  font-extrabold leading-[1.15] tracking-[-0.04em] text-[var(--primary)] sm:text-[32px]">
             Every Success
           </h3>
         </motion.div>

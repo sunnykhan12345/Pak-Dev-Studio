@@ -32,7 +32,7 @@ export default function WhyChoosePakDev() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-white py-20 text-black dark:bg-[#111216] dark:text-white">
+    <section className="relative overflow-hidden bg-white lg:py-[140px] py-20 text-black dark:bg-[#111216] dark:text-white">
       <div className="mx-auto max-w-7xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -41,10 +41,10 @@ export default function WhyChoosePakDev() {
           transition={{ duration: 0.7 }}
           className="mb-12 text-center"
         >
-          <h2 className="text-3xl font-bold md:text-4xl">
+          <h2 className="text-3xl font-extrabold md:text-4xl lg:text-5xl">
             Why Businesses Choose
           </h2>
-          <h3 className="mt-2 text-3xl font-bold text-[#7AC943] md:text-4xl">
+          <h3 className="mt-2 text-3xl font-bold text-[#7AC943] md:text-4xl lg:text-5xl">
             PakDevStudio
           </h3>
         </motion.div>
@@ -99,7 +99,6 @@ export default function WhyChoosePakDev() {
               strokeLinecap="round"
             />
           </svg>
-
           <div className="relative z-10 grid gap-6 pt-36 md:grid-cols-4 md:gap-10">
             {items.map((item, index) => (
               <TiltCard>
@@ -114,7 +113,7 @@ export default function WhyChoosePakDev() {
                     ease: "easeOut",
                   }}
                   whileHover={{ y: -8, scale: 1.02 }}
-                  className={`rounded-[20px] bg-[#F6F6F6] px-5 py-8 text-center shadow-sm transition-all duration-300 dark:bg-[#161722] ${
+                  className={`rounded-[20px] bg-[#F6F6F6] px-5 py-8 text-center shadow-sm transition-all duration-300 dark:bg-[#1F1F23] ${
                     index === 0
                       ? "md:mt-28"
                       : index === 1

@@ -9,7 +9,7 @@ import { stats } from "@/components/data/siteData";
 
 export default function PartnerSection() {
   return (
-    <section className="section-space pt-0">
+    <section className="">
       <div className="container-xl">
         <SectionHeading
           eyebrow="Your technology partner"
@@ -30,7 +30,7 @@ export default function PartnerSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.55 }}
-          className="mx-auto mt-10 max-w-[1200px] overflow-hidden"
+          className="mx-auto mt-10 lg:mt-16 max-w-[1200px] overflow-hidden"
         >
           <TiltCard className="rounded-[18px]">
             <div className="relative aspect-[2.05/1] overflow-hidden rounded-[18px]">
