@@ -2,11 +2,9 @@
 
 "use client";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import TiltCard from "@/components/common/TiltCard";
+import { motion } from "framer-motion";;
 import { heroImages } from "@/components/data/siteData";
 import { ArrowIcon } from "@/components/icons/Icon";
-
 const trustLogos = [
   { src: "/images/company.png", alt: "Client logo 1" },
   { src: "/images/company.png", alt: "Client logo 2" },
@@ -64,7 +62,7 @@ export default function Hero() {
           transition={{ duration: 0.65, ease: "easeOut" }}
           className="w-full max-w-[616px]"
         >
-          <h1 className="font-nexa text-[35px] font-extrabold leading-[70px] tracking-[0px] text-white  sm:text-[48px] md:text-[54px] lg:text-[59px]">
+          <h1 className="font-nexa text-[30px] font-extrabold lg:leading-[70px] tracking-[0px] text-white  sm:text-[48px] md:text-[54px] lg:text-[59px]">
             <span className="block lg:whitespace-nowrap">Building Smart</span>
             <span className="block lg:whitespace-nowrap">
               Digital Solutions for
