@@ -1,18 +1,22 @@
-
-
 "use client";
 import Image from "next/image";
-import { motion } from "framer-motion";;
+import { motion } from "framer-motion";
 import { heroImages } from "@/components/data/siteData";
 import { ArrowIcon } from "@/components/icons/Icon";
 const trustLogos = [
-  { src: "/images/company.png", alt: "Client logo 1" },
-  { src: "/images/company.png", alt: "Client logo 2" },
-  { src: "/images/company.png", alt: "Client logo 3" },
-  { src: "/images/company.png", alt: "Client logo 4" },
-  { src: "/images/company.png", alt: "Client logo 5" },
-  { src: "/images/company.png", alt: "Client logo 6" },
-  { src: "/images/company.png", alt: "Client logo 7" },
+  { src: "/images/dar.svg", alt: "DAR", className: "h-[22px] w-[62px]" },
+  {
+    src: "/images/HARMONIA.svg",
+    alt: "HARMONIA",
+    className: "h-[24px] w-[218px]",
+  },
+  { src: "/images/Kashio.svg", alt: "Kashio", className: "h-[30px] w-[105px]" },
+  {
+    src: "/images/Est.svg",
+    alt: "Establisher",
+    className: "h-[31px] w-[185px]",
+  },
+  { src: "/images/Reve.svg", alt: "Rêve", className: "h-[32px] w-[100px]" },
 ];
 
 const teamImages = [
@@ -107,8 +111,77 @@ export default function Hero() {
           />
         </motion.div>
       </div>
+      <div className="container-xl pb-8 pt-2">
+        <div className="flex w-full items-center gap-6 overflow-x-auto pb-2 lg:gap-7 lg:overflow-visible">
+          {/* Team + Rating */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="flex shrink-0 items-center gap-5"
+          >
+            <div className="flex -space-x-3">
+              {teamImages.map((src, index) => (
+                <Image
+                  key={src}
+                  src={src}
+                  alt={`Team member ${index + 1}`}
+                  width={58}
+                  height={58}
+                  className="h-[58px] w-[58px] rounded-full border-2 border-[var(--background)] object-cover"
+                />
+              ))}
+            </div>
 
-      <div className="container-xl pb-7">
+            <div>
+              <div className="flex gap-0.5">
+                {Array.from({ length: 5 }).map((_, index) => (
+                  <Image
+                    key={index}
+                    src="/icons/star.svg"
+                    alt=""
+                    width={20}
+                    height={20}
+                  />
+                ))}
+              </div>
+
+              <p className="mt-1 text-xs font-bold text-black/70 dark:text-[var(--text-muted)] lg:text-sm">
+                25k+ Happy Clients
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Divider */}
+          <div className="hidden h-11 w-px shrink-0 bg-black/15 dark:bg-white/15 sm:block" />
+
+          {/* Logos */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.55, delay: 0.08 }}
+            className="flex min-w-max shrink-0 items-center gap-7 lg:min-w-0 lg:flex-1 lg:justify-between"
+          >
+            {trustLogos.map((logo, index) => (
+              <span
+                key={`${logo.alt}-${index}`}
+                className="inline-flex shrink-0 items-center transition duration-300 hover:-translate-y-1"
+              >
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={220}
+                  height={45}
+                  className={`${logo.className} object-contain opacity-85 brightness-0 transition duration-300 hover:opacity-100 dark:invert`}
+                />
+              </span>
+            ))}
+          </motion.div>
+        </div>
+      </div>
+      {/* <div className="container-xl pb-7">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -160,18 +233,19 @@ export default function Hero() {
                 key={`${logo.alt}-${index}`}
                 className="inline-flex shrink-0 items-center opacity-70 transition duration-300 hover:-translate-y-1 hover:opacity-100"
               >
+           
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  width={94}
-                  height={38}
+                  width={87}
+                  height={27}
                   className="h-8 w-auto object-contain"
                 />
               </span>
             ))}
           </motion.div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
