@@ -147,13 +147,11 @@ export default function Hero() {
                   />
                 ))}
               </div>
-
               <p className="mt-1 text-xs font-bold text-black/70 dark:text-[var(--text-muted)] lg:text-sm">
                 25k+ Happy Clients
               </p>
             </div>
           </motion.div>
-
           {/* Divider */}
           <div className="hidden h-11 w-px shrink-0 bg-black/15 dark:bg-white/15 sm:block" />
 
