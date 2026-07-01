@@ -4,19 +4,20 @@ import { motion } from "framer-motion";
 import { heroImages } from "@/components/data/siteData";
 import { ArrowIcon } from "@/components/icons/Icon";
 const trustLogos = [
-  { src: "/images/dar.svg", alt: "DAR", className: "h-[22px] w-[62px]" },
+  { src: "/images/DAR.svg", alt: "DAR", className: "h-[42px] w-[66px]" },
   {
     src: "/images/HARMONIA.svg",
     alt: "HARMONIA",
-    className: "h-[24px] w-[218px]",
+    className: "h-[31px] w-[192px]",
   },
-  { src: "/images/Kashio.svg", alt: "Kashio", className: "h-[30px] w-[105px]" },
+  { src: "/images/Kashio.svg", alt: "Kashio", 
+    className: "h-[25px] w-[98px]" },
   {
     src: "/images/Est.svg",
     alt: "Establisher",
-    className: "h-[31px] w-[185px]",
+    className: "h-[52px] w-[198px]",
   },
-  { src: "/images/Reve.svg", alt: "Rêve", className: "h-[32px] w-[100px]" },
+  { src: "/images/Reve.svg", alt: "Rêve", className: "h-[27px] w-[87px]" },
 ];
 
 const teamImages = [
@@ -181,71 +182,7 @@ export default function Hero() {
           </motion.div>
         </div>
       </div>
-      {/* <div className="container-xl pb-7">
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="flex items-center gap-4 lg:gap-8"
-          >
-            <div className="flex -space-x-3">
-              {teamImages.map((src, index) => (
-                <Image
-                  key={src}
-                  src={src}
-                  alt={`Team member ${index + 1}`}
-                  width={58}
-                  height={58}
-                  className="h-[58px] w-[58px] rounded-full border-2 border-[var(--background)] object-cover"
-                />
-              ))}
-            </div>
-
-            <div>
-              <div className="flex gap-0.5">
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <Image
-                    key={index}
-                    src="/icons/star.svg"
-                    alt=""
-                    width={20}
-                    height={20}
-                  />
-                ))}
-              </div>
-              <p className="mt-1 text-xs font-bold text-[var(--text-muted)] lg:text-sm">
-                25k+ Happy Clients
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.55, delay: 0.08 }}
-            className="flex min-w-0 flex-1 items-center gap-7 overflow-hidden lg:justify-end"
-          >
-            {trustLogos.map((logo, index) => (
-              <span
-                key={`${logo.alt}-${index}`}
-                className="inline-flex shrink-0 items-center opacity-70 transition duration-300 hover:-translate-y-1 hover:opacity-100"
-              >
-           
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={87}
-                  height={27}
-                  className="h-8 w-auto object-contain"
-                />
-              </span>
-            ))}
-          </motion.div>
-        </div>
-      </div> */}
+  
     </section>
   );
 }
